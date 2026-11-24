@@ -39,8 +39,9 @@
   }
 
   const jobs = source.jobs;
-  const categories = ["Все", ...["Производство", "Продажи и сервис", "Маркетинг", "IT", "Офис"]
-    .filter(category => jobs.some(job => job.category === category))];
+  const categories = ["Все", "Производство", "Продажи и сервис", "Маркетинг", "IT", "Офис"];
+  const plurals = new Intl.PluralRules("ru");
+  const vacancyWords = { one: "вакансия", few: "вакансии", many: "вакансий" };
   const checked = new Date(source.updated + "T12:00:00Z").toLocaleDateString("ru-RU", {
     day: "numeric", month: "long", year: "numeric", timeZone: "UTC"
   });
@@ -71,6 +72,12 @@
     limit = pageSize;
     render();
     search.focus();
+  }
+
+  function selectCategory(category) {
+    selected = category;
+    limit = pageSize;
+    render();
   }
 
   function emptyState() {
@@ -106,12 +113,18 @@
     const button = element("button", "job-filter", category);
     button.type = "button";
     button.dataset.category = category;
-    button.addEventListener("click", () => {
-      selected = category;
-      limit = pageSize;
-      render();
-    });
+    button.addEventListener("click", () => selectCategory(category));
     filters.append(button);
+  }
+  for (const link of document.querySelectorAll("[data-job-direction]")) {
+    const category = link.dataset.jobDirection;
+    const total = jobs.filter(job => job.category === category).length;
+    const label = link.querySelector("[data-direction-count]");
+    if (label) label.textContent = total + " " + vacancyWords[plurals.select(total)];
+    link.addEventListener("click", () => {
+      search.value = "";
+      selectCategory(category);
+    });
   }
   search.addEventListener("input", () => {
     limit = pageSize;
