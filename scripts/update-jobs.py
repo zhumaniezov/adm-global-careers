@@ -14,6 +14,8 @@ from urllib.request import Request, urlopen
 EMPLOYERS = {
     3769561: "ROODELL",
     4587957: "FINCOM",
+    12456173: "ADM STAMPING",
+    11043737: "ADMC DASAN",
 }
 # Employers whose vacancies all belong to one direction
 FIXED_CATEGORY = {
@@ -69,9 +71,9 @@ def category(title):
         return "IT"
     if re.search("маркет|бренд|дизайн|product manager|ивент", title):
         return "Маркетинг"
-    if re.search("бухгалтер|финансового отдела|экономист", title):
+    if re.search(r"бухгалтер|buxgalter|финансового отдела|экономист|\bhrd?\b|кадр", title):
         return "Офис"
-    if re.search("инженер|производств|поставщик|охране труда", title):
+    if re.search("инженер|производств|поставщик|охране труда|muhandis|ishlab chiqarish|texnologiya|ombor|mexanik|elektrik", title):
         return "Производство"
     if re.search("продаж|продавец|автосалон|сервис|гаранти|мастер-приемщик|клиент|автомой|лизинг|rent", title):
         return "Продажи и сервис"

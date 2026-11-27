@@ -9,7 +9,7 @@
   const status = document.querySelector("#vacancy-status");
   const more = document.querySelector("#show-more");
   const source = window.ADM_VACANCIES;
-  const employerUrl = "https://hh.uz/employer/3769561";  // fallback link
+  const employerUrl = "https://hh.uz/search/vacancy?employer_id=3769561&employer_id=4587957&employer_id=12456173&employer_id=11043737";
   const pageSize = 8;
   const colors = {
     "Производство": "#7b5cf0", "Продажи и сервис": "#2f8bff",

@@ -18,7 +18,7 @@
     { img: "assets/assembly-team.webp", alt: "Команда на сборочной линии",
       text: "Выпускаем, продаём и обслуживаем автомобили пяти мировых брендов — Kia, Chery, Haval, Changan и Tank" },
     { img: "assets/portrait.webp", alt: "Сотрудник ADM на производстве",
-      text: "Одиннадцать компаний группы — от штамповки и кабелей до продаж, лизинга и проката: есть где расти и куда двигаться" }
+      text: "27 компаний группы — от заводов и дилерских центров до лизинга и IT: есть где расти и куда двигаться" }
   ];
   const img = slider.querySelector("[data-slide-img]");
   const num = slider.querySelector("[data-slide-num]");

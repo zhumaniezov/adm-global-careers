@@ -6,7 +6,7 @@ window.ADM_VACANCIES = {
       "title": "Специалист по кадровому делопроизводству",
       "city": "Ташкент",
       "experience": "3–6 лет",
-      "category": "Производство",
+      "category": "Офис",
       "company": "ROODELL"
     },
     {
@@ -304,6 +304,102 @@ window.ADM_VACANCIES = {
       "experience": "1–3 года",
       "category": "Лизинг",
       "company": "FINCOM"
+    },
+    {
+      "id": "139710813",
+      "title": "Texnologiya va rivojlanish bo'limi menejeri",
+      "city": "Джизак",
+      "experience": "3–6 лет",
+      "category": "Производство",
+      "company": "ADM STAMPING"
+    },
+    {
+      "id": "139710890",
+      "title": "CAD muhandis",
+      "city": "Джизак",
+      "experience": "1–3 года",
+      "category": "Производство",
+      "company": "ADM STAMPING"
+    },
+    {
+      "id": "139710836",
+      "title": "Ishlab chiqarish muhandisi",
+      "city": "Джизак",
+      "experience": "1–3 года",
+      "category": "Производство",
+      "company": "ADM STAMPING"
+    },
+    {
+      "id": "139741966",
+      "title": "Инженер по охране труда и промышленной безопасности",
+      "city": "Джизак",
+      "experience": "1–3 года",
+      "category": "Производство",
+      "company": "ADM STAMPING"
+    },
+    {
+      "id": "138851712",
+      "title": "Ombor mudiri",
+      "city": "Джизак",
+      "experience": "1–3 года",
+      "category": "Производство",
+      "company": "ADM STAMPING"
+    },
+    {
+      "id": "138843157",
+      "title": "Coffee Lady (Kofe va ichimliklar tayyorlash xodimi)",
+      "city": "Джизак",
+      "experience": "Без опыта",
+      "category": "Офис",
+      "company": "ADM STAMPING"
+    },
+    {
+      "id": "138334292",
+      "title": "Маркетолог",
+      "city": "Джизак",
+      "experience": "1–3 года",
+      "category": "Маркетинг",
+      "company": "ADM STAMPING"
+    },
+    {
+      "id": "138530776",
+      "title": "Mexanik",
+      "city": "Джизак",
+      "experience": "1–3 года",
+      "category": "Производство",
+      "company": "ADM STAMPING"
+    },
+    {
+      "id": "138531131",
+      "title": "Elektrik",
+      "city": "Джизак",
+      "experience": "1–3 года",
+      "category": "Производство",
+      "company": "ADM STAMPING"
+    },
+    {
+      "id": "139866764",
+      "title": "HRD manager",
+      "city": "Джизак",
+      "experience": "Более 6 лет",
+      "category": "Офис",
+      "company": "ADMC DASAN"
+    },
+    {
+      "id": "139369786",
+      "title": "HR manager/ HRD",
+      "city": "Ташкент",
+      "experience": "3–6 лет",
+      "category": "Офис",
+      "company": "ADMC DASAN"
+    },
+    {
+      "id": "139370168",
+      "title": "Bosh buxgalter",
+      "city": "Ташкент",
+      "experience": "3–6 лет",
+      "category": "Офис",
+      "company": "ADMC DASAN"
     }
   ]
 };
