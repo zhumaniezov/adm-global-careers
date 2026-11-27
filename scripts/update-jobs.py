@@ -90,6 +90,22 @@ def catalogue_row(vacancy, employer_id):
         "experience": EXPERIENCE.get(vacancy.get("workExperience"), ""),
         "category": FIXED_CATEGORY.get(employer_id) or category(vacancy["name"]),
         "company": EMPLOYERS[employer_id],
+        "salary": salary(vacancy.get("compensation")),
+        "published": (vacancy.get("publicationTime") or {}).get("$", "")[:10],
+    }
+
+
+def salary(compensation):
+    """Monthly salary fork as published on hh.uz, or None when hidden."""
+    if not compensation or not (compensation.get("from") or compensation.get("to")):
+        return None
+    if compensation.get("mode") not in (None, "MONTH"):
+        return None
+    return {
+        "from": compensation.get("from"),
+        "to": compensation.get("to"),
+        "currency": compensation.get("currencyCode", "UZS"),
+        "gross": bool(compensation.get("gross")),
     }
 
 

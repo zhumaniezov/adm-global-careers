@@ -7,7 +7,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "3–6 лет",
       "category": "Офис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 10000000,
+        "to": null,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-24"
     },
     {
       "id": "139883480",
@@ -15,7 +22,14 @@ window.ADM_VACANCIES = {
       "city": "Самарканд",
       "experience": "Без опыта",
       "category": "Продажи и сервис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 5000000,
+        "to": 6000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-26"
     },
     {
       "id": "139561383",
@@ -23,7 +37,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "Без опыта",
       "category": "Продажи и сервис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 6200000,
+        "to": null,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-17"
     },
     {
       "id": "139610610",
@@ -31,7 +52,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "1–3 года",
       "category": "Продажи и сервис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": null,
+        "to": 10000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-18"
     },
     {
       "id": "139352236",
@@ -39,7 +67,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "1–3 года",
       "category": "Офис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 15000000,
+        "to": null,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-11"
     },
     {
       "id": "139822289",
@@ -47,7 +82,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "1–3 года",
       "category": "Продажи и сервис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 10000000,
+        "to": 13000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-25"
     },
     {
       "id": "139734479",
@@ -55,7 +97,9 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "Более 6 лет",
       "category": "Офис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": null,
+      "published": "2026-11-23"
     },
     {
       "id": "139819217",
@@ -63,7 +107,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "1–3 года",
       "category": "Офис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 4644000,
+        "to": 5886000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-25"
     },
     {
       "id": "139477780",
@@ -71,7 +122,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "1–3 года",
       "category": "Офис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 8000000,
+        "to": null,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-18"
     },
     {
       "id": "139776638",
@@ -79,7 +137,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "1–3 года",
       "category": "Маркетинг",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 10000000,
+        "to": 13000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-24"
     },
     {
       "id": "139678667",
@@ -87,7 +152,14 @@ window.ADM_VACANCIES = {
       "city": "Нурафшон",
       "experience": "1–3 года",
       "category": "Продажи и сервис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 3000000,
+        "to": 20000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-20"
     },
     {
       "id": "138711387",
@@ -95,7 +167,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "Более 6 лет",
       "category": "Маркетинг",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": null,
+        "to": 35000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-20"
     },
     {
       "id": "139610340",
@@ -103,7 +182,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "3–6 лет",
       "category": "Продажи и сервис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 10000000,
+        "to": 10000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-18"
     },
     {
       "id": "139727808",
@@ -111,7 +197,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "1–3 года",
       "category": "Продажи и сервис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 2880000,
+        "to": 20000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-23"
     },
     {
       "id": "139883250",
@@ -119,7 +212,14 @@ window.ADM_VACANCIES = {
       "city": "Самарканд",
       "experience": "1–3 года",
       "category": "Продажи и сервис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 3000000,
+        "to": 15000000,
+        "currency": "UZS",
+        "gross": true
+      },
+      "published": "2026-11-26"
     },
     {
       "id": "139694025",
@@ -127,7 +227,14 @@ window.ADM_VACANCIES = {
       "city": "Наманган",
       "experience": "1–3 года",
       "category": "Продажи и сервис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 5000000,
+        "to": null,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-20"
     },
     {
       "id": "139476062",
@@ -135,7 +242,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "1–3 года",
       "category": "Маркетинг",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 15000000,
+        "to": 20000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-17"
     },
     {
       "id": "139576148",
@@ -143,7 +257,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "3–6 лет",
       "category": "Продажи и сервис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 3000000,
+        "to": 30000000,
+        "currency": "UZS",
+        "gross": true
+      },
+      "published": "2026-11-26"
     },
     {
       "id": "139099036",
@@ -151,7 +272,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "3–6 лет",
       "category": "Офис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 22000000,
+        "to": null,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-03"
     },
     {
       "id": "139452469",
@@ -159,7 +287,9 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "3–6 лет",
       "category": "Продажи и сервис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": null,
+      "published": "2026-11-13"
     },
     {
       "id": "139567758",
@@ -167,7 +297,9 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "3–6 лет",
       "category": "Офис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": null,
+      "published": "2026-11-17"
     },
     {
       "id": "138956760",
@@ -175,7 +307,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "3–6 лет",
       "category": "Производство",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 8000000,
+        "to": 10000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-10-29"
     },
     {
       "id": "139511713",
@@ -183,7 +322,9 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "1–3 года",
       "category": "Офис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": null,
+      "published": "2026-11-16"
     },
     {
       "id": "138711386",
@@ -191,7 +332,14 @@ window.ADM_VACANCIES = {
       "city": "Алматы",
       "experience": "Более 6 лет",
       "category": "Маркетинг",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": null,
+        "to": 35000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-20"
     },
     {
       "id": "139135607",
@@ -199,7 +347,9 @@ window.ADM_VACANCIES = {
       "city": "Джизак",
       "experience": "Более 6 лет",
       "category": "Производство",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": null,
+      "published": "2026-11-04"
     },
     {
       "id": "138502134",
@@ -207,7 +357,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "1–3 года",
       "category": "Офис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 5000000,
+        "to": 7000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-13"
     },
     {
       "id": "139144392",
@@ -215,7 +372,9 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "1–3 года",
       "category": "Продажи и сервис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": null,
+      "published": "2026-11-05"
     },
     {
       "id": "139565278",
@@ -223,7 +382,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "1–3 года",
       "category": "Продажи и сервис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 5000000,
+        "to": null,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-17"
     },
     {
       "id": "139554609",
@@ -231,7 +397,9 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "1–3 года",
       "category": "Производство",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": null,
+      "published": "2026-11-17"
     },
     {
       "id": "139412541",
@@ -239,7 +407,9 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "3–6 лет",
       "category": "Продажи и сервис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": null,
+      "published": "2026-11-12"
     },
     {
       "id": "138713260",
@@ -247,7 +417,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "1–3 года",
       "category": "Продажи и сервис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 5000000,
+        "to": 15000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-20"
     },
     {
       "id": "139882660",
@@ -255,7 +432,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "Без опыта",
       "category": "Продажи и сервис",
-      "company": "ROODELL"
+      "company": "ROODELL",
+      "salary": {
+        "from": 2000000,
+        "to": 6000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-26"
     },
     {
       "id": "139888426",
@@ -263,7 +447,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "1–3 года",
       "category": "Лизинг",
-      "company": "FINCOM"
+      "company": "FINCOM",
+      "salary": {
+        "from": 5000000,
+        "to": 10000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-26"
     },
     {
       "id": "139610276",
@@ -271,7 +462,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "Более 6 лет",
       "category": "Лизинг",
-      "company": "FINCOM"
+      "company": "FINCOM",
+      "salary": {
+        "from": 8000000,
+        "to": 10000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-24"
     },
     {
       "id": "139612487",
@@ -279,7 +477,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "1–3 года",
       "category": "Лизинг",
-      "company": "FINCOM"
+      "company": "FINCOM",
+      "salary": {
+        "from": null,
+        "to": 6000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-24"
     },
     {
       "id": "138978509",
@@ -287,7 +492,14 @@ window.ADM_VACANCIES = {
       "city": "Фергана",
       "experience": "1–3 года",
       "category": "Лизинг",
-      "company": "FINCOM"
+      "company": "FINCOM",
+      "salary": {
+        "from": 4860000,
+        "to": 15000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-25"
     },
     {
       "id": "139048634",
@@ -295,7 +507,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "1–3 года",
       "category": "Лизинг",
-      "company": "FINCOM"
+      "company": "FINCOM",
+      "salary": {
+        "from": 5500000,
+        "to": 10000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-26"
     },
     {
       "id": "139261450",
@@ -303,7 +522,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "1–3 года",
       "category": "Лизинг",
-      "company": "FINCOM"
+      "company": "FINCOM",
+      "salary": {
+        "from": 4860000,
+        "to": 15000000,
+        "currency": "UZS",
+        "gross": false
+      },
+      "published": "2026-11-24"
     },
     {
       "id": "139710813",
@@ -311,7 +537,9 @@ window.ADM_VACANCIES = {
       "city": "Джизак",
       "experience": "3–6 лет",
       "category": "Производство",
-      "company": "ADM STAMPING"
+      "company": "ADM STAMPING",
+      "salary": null,
+      "published": "2026-11-21"
     },
     {
       "id": "139710890",
@@ -319,7 +547,9 @@ window.ADM_VACANCIES = {
       "city": "Джизак",
       "experience": "1–3 года",
       "category": "Производство",
-      "company": "ADM STAMPING"
+      "company": "ADM STAMPING",
+      "salary": null,
+      "published": "2026-11-21"
     },
     {
       "id": "139710836",
@@ -327,7 +557,9 @@ window.ADM_VACANCIES = {
       "city": "Джизак",
       "experience": "1–3 года",
       "category": "Производство",
-      "company": "ADM STAMPING"
+      "company": "ADM STAMPING",
+      "salary": null,
+      "published": "2026-11-21"
     },
     {
       "id": "139741966",
@@ -335,7 +567,9 @@ window.ADM_VACANCIES = {
       "city": "Джизак",
       "experience": "1–3 года",
       "category": "Производство",
-      "company": "ADM STAMPING"
+      "company": "ADM STAMPING",
+      "salary": null,
+      "published": "2026-11-23"
     },
     {
       "id": "138851712",
@@ -343,7 +577,9 @@ window.ADM_VACANCIES = {
       "city": "Джизак",
       "experience": "1–3 года",
       "category": "Производство",
-      "company": "ADM STAMPING"
+      "company": "ADM STAMPING",
+      "salary": null,
+      "published": "2026-11-24"
     },
     {
       "id": "138843157",
@@ -351,7 +587,9 @@ window.ADM_VACANCIES = {
       "city": "Джизак",
       "experience": "Без опыта",
       "category": "Офис",
-      "company": "ADM STAMPING"
+      "company": "ADM STAMPING",
+      "salary": null,
+      "published": "2026-11-21"
     },
     {
       "id": "138334292",
@@ -359,7 +597,9 @@ window.ADM_VACANCIES = {
       "city": "Джизак",
       "experience": "1–3 года",
       "category": "Маркетинг",
-      "company": "ADM STAMPING"
+      "company": "ADM STAMPING",
+      "salary": null,
+      "published": "2026-11-02"
     },
     {
       "id": "138530776",
@@ -367,7 +607,9 @@ window.ADM_VACANCIES = {
       "city": "Джизак",
       "experience": "1–3 года",
       "category": "Производство",
-      "company": "ADM STAMPING"
+      "company": "ADM STAMPING",
+      "salary": null,
+      "published": "2026-11-21"
     },
     {
       "id": "138531131",
@@ -375,7 +617,9 @@ window.ADM_VACANCIES = {
       "city": "Джизак",
       "experience": "1–3 года",
       "category": "Производство",
-      "company": "ADM STAMPING"
+      "company": "ADM STAMPING",
+      "salary": null,
+      "published": "2026-11-21"
     },
     {
       "id": "139866764",
@@ -383,7 +627,14 @@ window.ADM_VACANCIES = {
       "city": "Джизак",
       "experience": "Более 6 лет",
       "category": "Офис",
-      "company": "ADMC DASAN"
+      "company": "ADMC DASAN",
+      "salary": {
+        "from": 12000000,
+        "to": 15000000,
+        "currency": "UZS",
+        "gross": true
+      },
+      "published": "2026-11-26"
     },
     {
       "id": "139369786",
@@ -391,7 +642,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "3–6 лет",
       "category": "Офис",
-      "company": "ADMC DASAN"
+      "company": "ADMC DASAN",
+      "salary": {
+        "from": 14000000,
+        "to": 18000000,
+        "currency": "UZS",
+        "gross": true
+      },
+      "published": "2026-11-11"
     },
     {
       "id": "139370168",
@@ -399,7 +657,14 @@ window.ADM_VACANCIES = {
       "city": "Ташкент",
       "experience": "3–6 лет",
       "category": "Офис",
-      "company": "ADMC DASAN"
+      "company": "ADMC DASAN",
+      "salary": {
+        "from": 16000000,
+        "to": 18000000,
+        "currency": "UZS",
+        "gross": true
+      },
+      "published": "2026-11-11"
     }
   ]
 };
