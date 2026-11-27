@@ -32,7 +32,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 .top.scrolled{box-shadow:0 1px 0 var(--line)}
 .nav-inner{display:flex;align-items:center;height:72px;gap:14px}
 .brand{display:inline-flex}.brand img{width:110px;height:auto}
-.career{position:relative;z-index:1;font-family:"Permanent Marker",cursive;font-size:24px;line-height:1;color:var(--ink);transform:rotate(-7deg);margin:4px 0 0 -40px;white-space:nowrap;transition:transform .25s}
+.career{position:relative;z-index:1;font-family:"Permanent Marker",cursive;font-size:24px;line-height:1;color:var(--ink);transform:rotate(-7deg);margin:-12px 0 0 -18.5px;white-space:nowrap;transition:transform .25s}
 .career:hover{transform:rotate(-2deg) scale(1.04)}
 .main-nav{display:flex;align-items:center;gap:30px;margin-left:44px;font-size:15px;font-weight:500}
 .menu-cta{display:none!important}
@@ -250,7 +250,7 @@ footer{margin-top:72px;border-top:1px solid var(--line)}
 }
 @media(max-width:860px){
   .wrap{width:calc(100% - 32px)}
-  .career{font-size:20px;margin:4px 0 0 -34px}
+  .career{font-size:20px;margin:-10px 0 0 -18.5px}
   .burger{display:block}
   .lang{margin-left:auto}
   .top.menu-open{backdrop-filter:none;-webkit-backdrop-filter:none}
@@ -294,7 +294,7 @@ footer{margin-top:72px;border-top:1px solid var(--line)}
 }
 @media(max-width:560px){
   .brand img{width:92px}
-  .career{font-size:18px;margin:4px 0 0 -32px}
+  .career{font-size:19px;margin:-10px 0 0 -18.5px}
   .top-cta{display:none}
   .to-top{right:14px;bottom:14px}
   .art{height:250px}
