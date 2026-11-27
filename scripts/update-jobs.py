@@ -1,4 +1,4 @@
-"""Refresh the careers catalogue from the public ROODELL vacancy search on hh.uz."""
+"""Refresh the careers catalogue from the public hh.uz vacancy search of the group's employers."""
 
 import datetime
 import json
@@ -10,7 +10,11 @@ from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
-EMPLOYER_ID = 3769561
+# hh.uz employer id -> name shown on the site
+EMPLOYERS = {
+    3769561: "ROODELL",
+    4587957: "FINCOM",
+}
 DESTINATION = Path(__file__).resolve().parent.parent / "jobs-data.js"
 EXPERIENCE = {
     "noExperience": "Без опыта",
@@ -39,8 +43,8 @@ class SearchPage(HTMLParser):
             self.capturing = False
 
 
-def fetch_page(page=0):
-    query = urlencode({"employer_id": EMPLOYER_ID, "items_on_page": 100, "page": page})
+def fetch_page(employer_id, page=0):
+    query = urlencode({"employer_id": employer_id, "items_on_page": 100, "page": page})
     request = Request(
         "https://hh.uz/search/vacancy?" + query,
         headers={"Accept-Language": "ru", "User-Agent": "ADM-Careers/1.0"},
@@ -50,7 +54,7 @@ def fetch_page(page=0):
     parser = SearchPage()
     parser.feed(body)
     result = json.loads("".join(parser.state))["vacancySearchResult"]
-    if result["proxiedSearchFormParams"]["employer_id"] != [EMPLOYER_ID]:
+    if result["proxiedSearchFormParams"]["employer_id"] != [employer_id]:
         raise ValueError("HeadHunter returned a different employer filter")
     return result
 
@@ -65,13 +69,13 @@ def category(title):
         return "Офис"
     if re.search("инженер|производств|поставщик|охране труда", title):
         return "Производство"
-    if re.search("продаж|продавец|автосалон|сервис|гаранти|мастер-приемщик", title):
+    if re.search("продаж|продавец|автосалон|сервис|гаранти|мастер-приемщик|клиент|автомой|лизинг|rent", title):
         return "Продажи и сервис"
     return "Офис"
 
 
-def catalogue_row(vacancy):
-    if vacancy["company"]["id"] != EMPLOYER_ID or vacancy["closedForApplicants"]:
+def catalogue_row(vacancy, employer_id):
+    if vacancy["company"]["id"] != employer_id or vacancy["closedForApplicants"]:
         raise ValueError("Unexpected employer or closed vacancy")
     return {
         "id": str(int(vacancy["vacancyId"])),
@@ -79,6 +83,7 @@ def catalogue_row(vacancy):
         "city": vacancy["area"]["name"],
         "experience": EXPERIENCE.get(vacancy.get("workExperience"), ""),
         "category": category(vacancy["name"]),
+        "company": EMPLOYERS[employer_id],
     }
 
 
@@ -93,17 +98,26 @@ def write_catalogue(rows):
     Path(tmp.name).replace(DESTINATION)
 
 
-def main():
-    first = fetch_page()
+def employer_jobs(employer_id):
+    first = fetch_page(employer_id)
     total = first["totalResults"]
     rows = list(first["vacancies"])
     for page in range(1, math.ceil(total / 100)):
-        rows.extend(fetch_page(page)["vacancies"])
-    jobs = [catalogue_row(row) for row in rows]
+        rows.extend(fetch_page(employer_id, page)["vacancies"])
+    jobs = [catalogue_row(row, employer_id) for row in rows]
     if len({job["id"] for job in jobs}) != total or len(jobs) != total:
-        raise ValueError("Incomplete search results. The previous file has been retained.")
+        raise ValueError(f"Incomplete search results for {employer_id}. The previous file has been retained.")
+    return jobs
+
+
+def main():
+    jobs = []
+    for employer_id, name in EMPLOYERS.items():
+        found = employer_jobs(employer_id)
+        print(f"{name}: {len(found)} vacancies")
+        jobs.extend(found)
     write_catalogue(jobs)
-    print(f"Saved {len(jobs)} ROODELL vacancies.")
+    print(f"Saved {len(jobs)} vacancies.")
 
 
 if __name__ == "__main__":
