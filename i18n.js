@@ -7,7 +7,6 @@
   const UZ = {
     "skip": "Vakansiyalarga o‘tish",
     "brand.aria": "ADM GLOBAL, bosh sahifa",
-    "career": "Karyera",
     "nav.aria": "Asosiy navigatsiya",
     "nav.directions": "Yo‘nalishlar",
     "nav.vacancies": "Vakansiyalar",
