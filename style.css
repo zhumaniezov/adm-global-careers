@@ -184,13 +184,11 @@ h2{font-size:clamp(32px,4.2vw,56px);font-weight:800;letter-spacing:-.04em;line-h
 
 /* steps */
 .steps{list-style:none;padding:0;margin:40px 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
-.steps li{background:var(--card);border-radius:var(--radius);padding:28px 28px 36px;min-height:300px}
-.steps .num{width:56px;height:56px;font-size:36px;border-radius:15px}
-.steps li:nth-child(2) .num{background:linear-gradient(140deg,#ffd8cb,#ffb39a);}
-.steps li:nth-child(3) .num{background:linear-gradient(140deg,#ffcbbb,#ff9a7d)}
-.steps li:nth-child(4) .num{background:linear-gradient(140deg,#ff9b72,#e75136);color:#fff}
-.steps h3{margin-top:28px;font-size:21px;font-weight:700;letter-spacing:-.025em;line-height:1.2}
-.steps p{margin-top:12px;font-size:15px;color:#55555f;line-height:1.5}
+.steps li{position:relative;isolation:isolate;overflow:hidden;background:var(--card);border-radius:var(--radius);padding:30px 28px;min-height:320px;transition:background .25s}
+.step-num{position:absolute;z-index:-1;right:-10px;bottom:-72px;font-size:320px;font-weight:800;line-height:1;letter-spacing:-.08em;color:#e5e5ea;transition:color .3s,transform .4s cubic-bezier(.2,.8,.2,1);user-select:none}
+.steps li:hover .step-num{color:#ffd9cc;transform:translateY(-8px)}
+.steps h3{font-size:22px;font-weight:700;letter-spacing:-.025em;line-height:1.2;max-width:90%}
+.steps p{margin-top:12px;font-size:15px;color:#55555f;line-height:1.5;max-width:92%}
 
 /* brands */
 .brands{display:flex;align-items:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 0}
@@ -222,7 +220,7 @@ footer{margin-top:72px;border-top:1px solid var(--line)}
   .art{width:27vw}
   .top nav{gap:22px;margin-left:24px}
   .companies{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}.steps li{min-height:0}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}.steps li{min-height:260px}
 }
 @media(max-width:860px){
   .wrap{width:calc(100% - 32px)}
@@ -264,7 +262,7 @@ footer{margin-top:72px;border-top:1px solid var(--line)}
   .stat span{font-size:14px}
   .job-card{padding:20px;min-height:0}
   .job-title{font-size:19px}
-  .steps{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}.steps li{min-height:200px}.step-num{font-size:200px;bottom:-46px}
   .companies{grid-template-columns:1fr 1fr}.companies li{padding:16px 18px;min-height:80px}.companies li>b{font-size:15px}.comp-cta{grid-column:1/-1}
   .brandmarks{flex-wrap:wrap;justify-content:center;gap:18px 28px}.brandmarks img{max-height:15px;max-width:28%}
   .foot nav{flex-wrap:wrap;gap:14px 20px}
