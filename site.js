@@ -37,23 +37,37 @@
   const img = slider.querySelector("[data-slide-img]");
   const num = slider.querySelector("[data-slide-num]");
   const text = slider.querySelector("[data-slide-text]");
-  const count = slider.querySelector("[data-slide-count]");
+  const progress = slider.querySelector("[data-slide-progress]");
   let index = 0;
   let preloaded = false;
+
+  const bars = images.map((_, i) => {
+    const bar = document.createElement("button");
+    bar.type = "button";
+    bar.addEventListener("click", () => step(i - index));
+    return bar;
+  });
+  progress.replaceChildren(...bars);
 
   function show(next, animate) {
     index = (next + images.length) % images.length;
     const alts = I18N.t("slides.alt");
-    const swap = () => { img.src = images[index]; img.alt = alts[index]; img.classList.remove("fading"); };
-    if (animate) { img.classList.add("fading"); setTimeout(swap, 180); } else swap();
-    num.textContent = String(index + 1);
+    const swap = () => {
+      img.src = images[index]; img.alt = alts[index];
+      num.textContent = String(index + 1);
+      img.classList.remove("fading"); num.classList.remove("fading");
+    };
+    if (animate) { img.classList.add("fading"); num.classList.add("fading"); setTimeout(swap, 180); } else swap();
     text.textContent = I18N.t("slides")[index];
-    count.textContent = (index + 1) + " / " + images.length;
+    bars.forEach((bar, i) => {
+      bar.setAttribute("aria-current", String(i === index));
+      bar.setAttribute("aria-label", (i + 1) + " / " + images.length);
+    });
   }
 
   function step(delta) {
     if (!preloaded) { preloaded = true; images.forEach(src => { new Image().src = src; }); }
-    show(index + delta, true);
+    if (delta) show(index + delta, true);
   }
 
   slider.querySelector("[data-slide-prev]").addEventListener("click", () => step(-1));
