@@ -13,7 +13,7 @@
   const pageSize = 8;
   const colors = {
     "Производство": "#7b5cf0", "Продажи и сервис": "#2f8bff",
-    "Маркетинг": "#ff5c9a", "IT": "#f5a623", "Офис": "#2fae4e"
+    "Маркетинг": "#ff5c9a", "IT": "#f5a623", "Офис": "#2fae4e", "Лизинг": "#e75136"
   };
   let selected = "Все";
   let limit = pageSize;
@@ -45,7 +45,7 @@
   }
 
   const jobs = source.jobs;
-  const categories = ["Все", "Производство", "Продажи и сервис", "Маркетинг", "IT", "Офис"];
+  const categories = ["Все", "Производство", "Продажи и сервис", "Маркетинг", "IT", "Лизинг", "Офис"];
   const plurals = new Intl.PluralRules("ru");
   const vacancyWords = { one: "вакансия", few: "вакансии", many: "вакансий", other: "вакансии" };
   const plural = n => n + " " + vacancyWords[plurals.select(n)];

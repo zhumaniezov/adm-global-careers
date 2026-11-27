@@ -15,6 +15,10 @@ EMPLOYERS = {
     3769561: "ROODELL",
     4587957: "FINCOM",
 }
+# Employers whose vacancies all belong to one direction
+FIXED_CATEGORY = {
+    4587957: "Лизинг",
+}
 DESTINATION = Path(__file__).resolve().parent.parent / "jobs-data.js"
 EXPERIENCE = {
     "noExperience": "Без опыта",
@@ -82,7 +86,7 @@ def catalogue_row(vacancy, employer_id):
         "title": vacancy["name"].strip(),
         "city": vacancy["area"]["name"],
         "experience": EXPERIENCE.get(vacancy.get("workExperience"), ""),
-        "category": category(vacancy["name"]),
+        "category": FIXED_CATEGORY.get(employer_id) or category(vacancy["name"]),
         "company": EMPLOYERS[employer_id],
     }
 

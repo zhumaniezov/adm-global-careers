@@ -262,7 +262,7 @@ window.ADM_VACANCIES = {
       "title": "Менеджер по работе с клиентами в rent car",
       "city": "Ташкент",
       "experience": "1–3 года",
-      "category": "Продажи и сервис",
+      "category": "Лизинг",
       "company": "FINCOM"
     },
     {
@@ -270,7 +270,7 @@ window.ADM_VACANCIES = {
       "title": "Специалист по кадровому делопроизводству",
       "city": "Ташкент",
       "experience": "Более 6 лет",
-      "category": "Производство",
+      "category": "Лизинг",
       "company": "FINCOM"
     },
     {
@@ -278,7 +278,7 @@ window.ADM_VACANCIES = {
       "title": "Офис-менеджер",
       "city": "Ташкент",
       "experience": "1–3 года",
-      "category": "Офис",
+      "category": "Лизинг",
       "company": "FINCOM"
     },
     {
@@ -286,7 +286,7 @@ window.ADM_VACANCIES = {
       "title": "Менеджер по продажам автомобилей в лизинг в автосалон в Фергану",
       "city": "Фергана",
       "experience": "1–3 года",
-      "category": "Продажи и сервис",
+      "category": "Лизинг",
       "company": "FINCOM"
     },
     {
@@ -294,7 +294,7 @@ window.ADM_VACANCIES = {
       "title": "Специалист по взысканию задолженности в лизинг (soft collection)",
       "city": "Ташкент",
       "experience": "1–3 года",
-      "category": "Продажи и сервис",
+      "category": "Лизинг",
       "company": "FINCOM"
     },
     {
@@ -302,7 +302,7 @@ window.ADM_VACANCIES = {
       "title": "Менеджер по продажам автомобилей в лизинг в автосалон",
       "city": "Ташкент",
       "experience": "1–3 года",
-      "category": "Продажи и сервис",
+      "category": "Лизинг",
       "company": "FINCOM"
     }
   ]
