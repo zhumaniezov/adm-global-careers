@@ -196,7 +196,8 @@ h2{font-size:clamp(32px,4.2vw,56px);font-weight:800;letter-spacing:-.04em;line-h
 .brands{display:flex;align-items:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 0}
 .brandmarks{flex:1;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brandmarks img[alt=Tank]{max-height:16px}
-.brandmarks img{max-width:17%;width:auto;max-height:22px;filter:brightness(0);opacity:.55;transition:opacity .2s}
+.brandmarks img[alt=Geely]{max-height:17px}
+.brandmarks img{max-width:15%;width:auto;max-height:22px;filter:brightness(0);opacity:.55;transition:opacity .2s}
 .brandmarks img:hover{opacity:.9}
 
 /* cta */
@@ -265,7 +266,7 @@ footer{margin-top:72px;border-top:1px solid var(--line)}
   .job-title{font-size:19px}
   .steps{grid-template-columns:1fr}
   .companies{grid-template-columns:1fr 1fr}.companies li{padding:16px 18px;min-height:80px}.companies li>b{font-size:15px}.comp-cta{grid-column:1/-1}
-  .brandmarks{gap:14px}.brandmarks img{max-height:15px}
+  .brandmarks{flex-wrap:wrap;justify-content:center;gap:18px 28px}.brandmarks img{max-height:15px;max-width:28%}
   .foot nav{flex-wrap:wrap;gap:14px 20px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
