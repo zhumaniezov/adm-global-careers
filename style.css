@@ -70,27 +70,18 @@ h1{font-size:clamp(46px,6.4vw,92px);font-weight:800;letter-spacing:-.045em;line-
 .ph4.car{width:78%;aspect-ratio:1;bottom:2%;right:4%;background:radial-gradient(circle at 35% 30%,#fff3ec,#ffd8c7 55%,#ffb896);overflow:visible;animation:bob 9s ease-in-out -3s infinite}
 .ph4.car img{position:absolute;width:122%;height:auto;left:-14%;top:24%;object-fit:contain;transform:rotate(-6deg);filter:drop-shadow(0 18px 14px #6b2a1433)}
 
-/* textured "3D" capsules, inspired by Avito Team */
-.pill{border-radius:999px;
-  background:radial-gradient(circle,rgba(255,255,255,.5) 0 1.2px,transparent 1.7px) 0 0/7px 7px,var(--g);
-  box-shadow:inset -10px -14px 22px rgba(0,0,0,.18),inset 10px 10px 18px rgba(255,255,255,.35),0 24px 40px -18px var(--sh)}
-.p-blue{--g:linear-gradient(160deg,#8fd0ff,#2f6bff 70%);--sh:#2f6bff88}
-.p-violet{--g:linear-gradient(160deg,#c7b2ff,#6a3df0 70%);--sh:#6a3df088}
-.p-orange{--g:linear-gradient(160deg,#ffc29e,#e75136 70%);--sh:#e7513688}
-.p-green{--g:linear-gradient(160deg,#b9f09a,#25a24a 72%);--sh:#25a24a88}
-.p-rings{background:repeating-radial-gradient(circle at 50% 50%,#ff7a5c 0 4px,#e2412a 4px 8px);box-shadow:inset -8px -10px 18px rgba(0,0,0,.2),0 20px 30px -16px #e2412a99}
-.ball{border-radius:50%}
-.b-blue{background:radial-gradient(circle at 30% 25%,#d5ecff,#5aa8ff 45%,#2457d6)}
-.b-orange{background:radial-gradient(circle at 30% 25%,#ffe5d6,#ff8a5b 45%,#d9431f)}
-.s1{width:22%;aspect-ratio:1;top:6%;left:4%;animation:bob 6s ease-in-out infinite}
-.s2{width:24%;height:62%;top:30%;left:25%;transform:rotate(-24deg);z-index:-1;animation:bob 9s ease-in-out -4s infinite}
-.s3{width:12%;height:20%;top:48%;left:-2%;transform:rotate(18deg);animation:bob 7s ease-in-out -2s infinite}
-.s4{width:16%;height:28%;top:0;left:74%;transform:rotate(32deg);animation:bob 8s ease-in-out -1s infinite}
-.s5{width:7%;aspect-ratio:1;top:62%;left:16%}
-.t1{width:22%;height:70%;top:14%;right:2%;transform:rotate(12deg);z-index:-1;animation:bob 9s ease-in-out -2s infinite}
-.t2{width:12%;height:22%;top:3%;left:6%;transform:rotate(-28deg);animation:bob 7s ease-in-out infinite}
-.t3{width:15%;height:30%;bottom:-6%;left:4%;transform:rotate(22deg);animation:bob 8s ease-in-out -3s infinite}
-.t4{width:8%;aspect-ratio:1;top:52%;left:16%}
+/* road with lane markings and automotive 3D icons */
+.road{position:absolute;inset:0;width:100%;height:100%;z-index:-1;overflow:visible;filter:drop-shadow(0 18px 24px rgba(231,81,54,.28))}
+.road path{fill:none;vector-effect:non-scaling-stroke;stroke-linecap:round}
+.road-base{stroke:var(--brand);stroke-width:46px;opacity:.95}
+.road-line{stroke:#fff;stroke-width:3px;stroke-dasharray:16 14;animation:drive 2.4s linear infinite}
+@keyframes drive{to{stroke-dashoffset:-60}}
+.emoji{position:absolute;filter:drop-shadow(0 14px 16px rgba(0,0,0,.14))}
+.e1{width:24%;top:2%;left:2%;transform:rotate(-20deg);animation:bob 6s ease-in-out infinite}
+.e2{width:17%;top:52%;left:-2%;transform:rotate(12deg);animation:bob 7s ease-in-out -2s infinite}
+.e3{width:16%;top:2%;left:76%;transform:rotate(14deg);animation:bob 8s ease-in-out -1s infinite}
+.e4{width:22%;top:2%;left:8%;transform:rotate(-12deg);animation:bob 7s ease-in-out infinite}
+.e5{width:18%;top:46%;left:2%;transform:rotate(18deg);animation:bob 8s ease-in-out -3s infinite}
 @keyframes bob{50%{translate:0 -12px}}
 
 /* ---------- sections ---------- */
@@ -293,6 +284,7 @@ footer{margin-top:72px;border-top:1px solid var(--line)}
   .copy{margin-left:0;width:100%}
 }
 @media(max-width:560px){
+  .road-base{stroke-width:30px}.road-line{stroke-width:2px;stroke-dasharray:10 9}
   .brand img{width:92px}
   .career{font-size:19px;margin:-10px 0 0 -18.5px}
   .top-cta{display:none}
